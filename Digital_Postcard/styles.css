@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #171717;
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+}
+input {
+  font-family: "Handlee", cursive;
+  font-size: 18px;
+}
+.postcard {
+  padding: 25px;
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  position: absolute;
+  /* cuando se utiliza esta propiedad hay que indicar top, bottom, left, right */
+  top: 50%;
+  left: 50%;
+  /* para centrar el div perfectamente */
+  transform: translate(-50%, -50%);
+}
+.postcard-header {
+  overflow: hidden;
+  margin-bottom: 15px;
+  height: 70px;
+}
+.postcard-header img {
+  max-width: 60px;
+  float: right;
+}
+.postcard-header h1 {
+  font-size: 38px;
+}
+.postcard-body {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.left-part {
+  float: left;
+  width: 50%;
+}
+.right-part {
+  float: right;
+  width: 50%;
+}
+.right-part input {
+  display: block;
+}
+.right-part input[type="text"] {
+  width: 235px;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.postcard-footer {
+  padding: 10px;
+  text-align: center;
+}
+
+.postcard-footer input[type="submit"] {
+  border: none;
+  border-bottom: 1px solid gray;
+}
